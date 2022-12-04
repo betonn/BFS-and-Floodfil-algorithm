@@ -1,0 +1,83 @@
+Module(
+    body=[
+        If(
+            test=BoolOp(
+                op=And(),
+                values=[
+                    Compare(
+                        left=Name(id='isvent', ctx=Store()),
+                        ops=[
+                            Eq()],
+                        comparators=[
+                            Constant(value=0.0)]),
+                    Compare(
+                        left=Name(id='pao2fio2', ctx=Store()),
+                        ops=[
+                            Lt()],
+                        comparators=[
+                            Constant(value=400.0)])]),
+            body=[
+                8],
+            orelse=[
+                If(
+                    test=BoolOp(
+                        op=And(),
+                        values=[
+                            Compare(
+                                left=Name(id='isvent', ctx=Store()),
+                                ops=[
+                                    Eq()],
+                                comparators=[
+                                    Constant(value=0.0)]),
+                            Compare(
+                                left=Name(id='pao2fio2', ctx=Store()),
+                                ops=[
+                                    Lt()],
+                                comparators=[
+                                    Constant(value=300.0)])]),
+                    body=[
+                        6],
+                    orelse=[
+                        If(
+                            test=BoolOp(
+                                op=And(),
+                                values=[
+                                    Compare(
+                                        left=Name(id='isvent', ctx=Store()),
+                                        ops=[
+                                            Eq()],
+                                        comparators=[
+                                            Constant(value=1.0)]),
+                                    Compare(
+                                        left=Name(id='pao2fio2', ctx=Store()),
+                                        ops=[
+                                            Lt()],
+                                        comparators=[
+                                            Constant(value=200.0)])]),
+                            body=[
+                                4],
+                            orelse=[
+                                If(
+                                    test=BoolOp(
+                                        op=And(),
+                                        values=[
+                                            Compare(
+                                                left=Name(id='isvent', ctx=Store()),
+                                                ops=[
+                                                    Eq()],
+                                                comparators=[
+                                                    Constant(value=1.0)]),
+                                            Compare(
+                                                left=Name(id='pao2fio2', ctx=Store()),
+                                                ops=[
+                                                    Lt()],
+                                                comparators=[
+                                                    Constant(value=100.0)])]),
+                                    body=[
+                                        2],
+                                    orelse=[
+                                        Assign(
+                                            targets=[
+                                                Name(id='resp', ctx=Store())],
+                                            value=Constant(value=4.0))])])])])],
+    type_ignores=[])
